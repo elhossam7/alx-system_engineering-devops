@@ -1,2 +1,2 @@
 #!/bin/bash
-( for d in . .. /boot; do ls -la "$d"; done )
+ls -la . .. /boot
