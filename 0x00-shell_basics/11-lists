@@ -1,3 +1,2 @@
 #!/bin/bash
-(shopt -s dotglob; (for f in ./*; do ls -la "$f"; done); shopt -u dotglob; (shopt -s dotglob; for f in ../.*; do [ "$f" != "../.." ] && [ "$f" != "../." ] && ls -la "$f"; done); shopt -u dotglob; (shopt -s dotglob; for f in /boot/*; do ls -la "$f"; done))
-
+for d in . .. /boot; do ls -la "$d"; done
